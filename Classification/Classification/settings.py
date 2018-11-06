@@ -51,6 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Classification.urls'
+# ROOT_URLCONF = ''
 
 TEMPLATES = [
     {
