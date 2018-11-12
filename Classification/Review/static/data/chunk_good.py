@@ -9,13 +9,13 @@ def data_chunk(text):
     return results_chunk
 
 
-with open('bad/bad.txt', 'r') as bad_data:
-    for index, val in enumerate(bad_data):
+with open('good/good.txt', 'r') as good_data:
+    for index, val in enumerate(good_data):
         line = data_chunk(val.lower())
         line = '/'.join(line)
         if line != '':
-            with open('bad/1.txt', 'a+') as bad_chunk:
-                bad_chunk.write(line + '\n')
+            with open('2.txt', 'a+') as good_chunk:
+                good_chunk.write(line + '\n')
 
 
 

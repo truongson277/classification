@@ -1,3 +1,4 @@
-rest_framework
 underthesea
 django
+whitenoise==3.2
+gunicorn==19.6.0

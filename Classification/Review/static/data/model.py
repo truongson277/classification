@@ -101,17 +101,17 @@ def model_build():
     logging.debug("Building model...")
     model = Sequential()
     # 入力層
-    model.add(Dense(512, input_shape=(max_words,)))
+    model.add(Dense(256, input_shape=(max_words,)))
     model.add(Activation('relu'))
-    model.add(Dropout(0.7))
+    model.add(Dropout(0.2))
     #　中間層1
-    model.add(Dense(32))
+    model.add(Dense(128))
     model.add(Activation('relu'))
-    model.add(Dropout(0.7))
+    model.add(Dropout(0.2))
     # 中間層2
-    # model.add(Dense(32))
-    # model.add(Activation('relu'))
-    # model.add(Dropout(0.7))
+    model.add(Dense(64))
+    model.add(Activation('relu'))
+    model.add(Dropout(0.2))
     #　出力層
     model.add(Dense(nb_classes))
     model.add(Activation('softmax'))

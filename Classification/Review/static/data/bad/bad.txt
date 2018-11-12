@@ -104,3 +104,24 @@ dải sáng không đủ rộng nên chụp ngược sáng, chênh sáng hơi k�
 chụp thiếu sáng cũng khá tệ.
 Dung lượng pin không cao
  thiết kế chắc chắn nhưng khá thô
+với việc nhập dữ liệu mất nhiều thời gian
+thời gian chờ trang web load chậm và giao diện cũng không mượt
+chỉ thích hợp với những người có nhiều thời gian
+được gia công chưa thật tỉ mỉ, vẫn có thể nhìn thấy các khe hở.Nếu như có điểm chưa hài lòng thì đó là độ tương phản chưa ấn tượng
+nơi đặt cụm tản nhiệt thì rất nóng
+Ở chế độ này quạt chạy khá ồn
+thiết kế bàn phím không hợp lý
+tản nhiệt và nhất là mức giá khá cao.
+ Thiếu cổng LAN, đầu đọc thẻ nhớ
+Thời gian sử dụng pin ngắn
+Máy có khá nhiều khe tản nhiệt nhưng hiệu quả chưa cao như mong đợi
+màn hình độ sáng chưa cao, khó dùng ngoài trời nắng hay khu vực có ánh sáng mạnh
+Máy hơi nóng khi chạy các tác vụ nặng và hệ thống tản nhiệt chưa hiệu quả để đảm bảo cho hệ thống chạy ở tốc độ cao trong thời gian dài.
+Nhìn chung ngoại hình OptiPlex 5050 không quá nổi bật
+hiệu quả tản nhiệt cũng không cao.
+ người dùng chỉ chỉnh được mức sáng tối của ảnh
+lỗi cảm ứng
+mới hơn và đẹp hơn không đồng nghĩa với tốt hơn
+Chân đế trông rất hầm hố với phần ngàm tinh xảo
+Webcam chất lượng trung bình
+Bàn phím chuột đi kèm vẫn là loại có dây, chất lượng không cao

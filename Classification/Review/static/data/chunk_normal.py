@@ -1,4 +1,4 @@
-from  underthesea  import  chunk
+from underthesea import chunk
 
 def data_chunk(text):
     _list = chunk(text)
@@ -9,13 +9,13 @@ def data_chunk(text):
     return results_chunk
 
 
-with open('good/good.txt', 'r') as good_data:
-    for index, val in enumerate(good_data):
+with open('normal/normal.txt', 'r') as normal_data:
+    for index, val in enumerate(normal_data):
         line = data_chunk(val.lower())
         line = '/'.join(line)
         if line != '':
-            with open('good/2.txt', 'a+') as good_chunk:
-                good_chunk.write(line + '\n')
+            with open('3.txt', 'a+') as normal_chunk:
+                normal_chunk.write(line + '\n')
 
 
 

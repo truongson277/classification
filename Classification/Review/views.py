@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponseBadRequest, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from rest_framework.decorators import api_view
+
 # Create your views here.
 
+DIR_DATA = 'Review/static/data/'
 
 @csrf_exempt
 def index(request):
@@ -12,9 +13,9 @@ def index(request):
 
 @csrf_exempt
 def data(request):
-    bad_file = open('/home/truongson/TS/Classification/Review/data/bad/bad.txt', 'r')
-    good_file = open('/home/truongson/TS/Classification/Review/data/good/good.txt', 'r')
-    normal_file = open('/home/truongson/TS/Classification/Review/data/normal/normal.txt', 'r')
+    bad_file = open(DIR_DATA + 'bad/bad.txt', 'r')
+    good_file = open(DIR_DATA + 'good/good.txt', 'r')
+    normal_file = open(DIR_DATA + 'normal/normal.txt', 'r')
     data = {
         'good': str(sum(1 for i in good_file)),
         'bad': str(sum(1 for i in bad_file)),
@@ -26,9 +27,9 @@ def data(request):
 @csrf_exempt
 def save_data(request):
     if request.GET['select'] != 'Select class' and request.GET['input'] != '':
-        bad_file = open('/home/truongson/TS/Classification/Review/data/bad/bad.txt', 'a')
-        good_file = open('/home/truongson/TS/Classification/Review/data/good/good.txt', 'a')
-        normal_file = open('/home/truongson/TS/Classification/Review/data/normal/normal.txt', 'a')
+        bad_file = open(DIR_DATA + 'bad/bad.txt', 'a')
+        good_file = open(DIR_DATA + 'good/good.txt', 'a')
+        normal_file = open(DIR_DATA + 'normal/normal.txt', 'a')
         if request.GET['select'] == 'good':
             good_file.write(request.GET['input'] + '\n')
             good_file.close()
