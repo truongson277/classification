@@ -14,8 +14,8 @@ logging.basicConfig(level=logging.DEBUG)
 nb_classes = 3    # 5段階にランク判定
 max_words = 0
 
-batch_size = 64
-nb_epoch = 20
+batch_size = 2
+nb_epoch = 16
 
 
 def main():
@@ -29,7 +29,7 @@ def main():
     max_words=len(X[0])
     print('max_words:'+str(max_words))
 
-    X_train, X_test, Y_train, Y_test = train_test_split(X, Y)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2)
     print(len(X_train), len(Y_train))
     # Y_train = np_utils.to_categorical(Y_train, nb_classes)
     print(len(X_train), len(Y_train))
@@ -48,10 +48,9 @@ def main():
 def model_train(X_train, Y_train):
     model = KerasClassifier(
         build_fn=model_build,
-        nb_epoch=nb_epoch,
         batch_size=batch_size)
     logging.debug("Training model...")
-    model.fit(np.array(X_train), np.array(Y_train))
+    model.fit(np.array(X_train), np.array(Y_train),  epochs=nb_epoch)
     return model
 
 
@@ -101,17 +100,22 @@ def model_build():
     logging.debug("Building model...")
     model = Sequential()
     # 入力層
-    model.add(Dense(256, input_shape=(max_words,)))
+    model.add(Dense(128, input_shape=(max_words,)))
     model.add(Activation('relu'))
     model.add(Dropout(0.2))
     #　中間層1
-    model.add(Dense(128))
-    model.add(Activation('relu'))
-    model.add(Dropout(0.2))
-    # 中間層2
     model.add(Dense(64))
     model.add(Activation('relu'))
     model.add(Dropout(0.2))
+    # # # 中間層2
+    # model.add(Dense(128))
+    # model.add(Activation('relu'))
+    # model.add(Dropout(0.2))
+    #
+    # model.add(Dense(32))
+    # model.add(Activation('relu'))
+    # model.add(Dropout(0.2))
+
     #　出力層
     model.add(Dense(nb_classes))
     model.add(Activation('softmax'))

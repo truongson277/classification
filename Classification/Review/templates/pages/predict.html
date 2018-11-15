@@ -1,0 +1,59 @@
+{% extends 'pages/base.html' %}
+
+{% block title %}Predict{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h1>Predict Review</h1>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Input review" name="inputPredict" id="inputPredict">
+            </div>
+            <div class="form-group">
+
+                <button type="submit" class="loader" id="loader" hidden></button>
+                <input type="submit" class="btn btn-primary" id="predict">
+
+                <a class="btn btn-success" href="/home">Home</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Good</h4>
+                </div>
+                <div class="card-body" id="good">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header" >
+                    <h4>Bad</h4>
+                </div>
+                <div class="card-body" id="bad">
+                    <!--<div class="form-group">-->
+                        <!--<label><input type="checkbox" class="mr-3"></label>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Normal</h4>
+                </div>
+                <div class="card-body"  id="normal">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
