@@ -44,16 +44,21 @@ $(function () {
 
     $('#saveGood').click(function () {
         var list_input = $("input[type='checkbox']");
-        var data = {}
+        var data = {'index': {}}
         var i = 0
-        for( i;i<list_input.length;i++){
-            if (list_input[i].checked){
-               data[i] = list_input[i].defaultValue;
+        var j = 0
+        for (i; i < list_input.length; i++) {
+            if (list_input[i].checked) {
+                data[j] = list_input[i].defaultValue;
+                j += 1
+                data['index'] = j
             }
         }
+
+        console.log(data)
         $.get("save-good", data, function (result, status) {
             if (jQuery.isEmptyObject(result) !== true) {
-
+                alert("Status: Success")
             } else {
                 alert("Status: Error");
             }

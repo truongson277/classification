@@ -7,6 +7,6 @@ urlpatterns = [
     path('input', views.data),
     path('save', views.save_data),
     path('predict', views.predict_review),
-    path('save-predict', views.save_predict)
-
+    path('save-predict', views.save_predict),
+    path('save-good', views.save_good)
 ]

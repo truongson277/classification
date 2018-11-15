@@ -1,20 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect, HttpResponseBadRequest, JsonResponse
+from django.http import HttpResponseRedirect, HttpResponseBadRequest, JsonResponse, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from .static.data.predict import main
-from keras.models import load_model
 import os
 from keras import backend as K
 K.clear_session()
 os.environ['TF_CPP_MIN_LOG_LEVEL'] ='2'
-
-
-def model_load():
-    filename = "/home/truongson/TS/classification/Classification/Review/static/data/model_news.h5"
-    loaded_model = load_model(filename)
-    # loaded_model = pickle.load(open(filename, 'rb'))
-    return loaded_model
-# Create your views here.
 
 
 DIR_DATA = 'Review/static/data/'
@@ -76,3 +67,8 @@ def save_predict(request):
         return HttpResponseBadRequest(status=404)
 
 
+@csrf_exempt
+def save_good(request):
+    for i in range(0, int(request.GET['index'])):
+        print(request.GET[str(i)])
+    return HttpResponse(status=200)

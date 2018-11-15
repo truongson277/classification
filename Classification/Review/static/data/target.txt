@@ -1,5 +1,12 @@
 Wang Miaoyi, 30 tuổi, một nhà phát triển game thành công trong thời điểm nền công nghiệp phần mềm Trung Quốc có nhiều khởi sắc
  Tốt nghiệp một trường đại học hàng đầu rồi tự mở công ty, Wang gặt hái được nhiều thành tích nhất định: game của cô được ưa chuộng trên Nintendo Switch và có lượng tải về khủng trên Steam, cùng với nhiều hợp đồng đưa game lên các nền tảng di động khác
 
-123
-123
+Bên cạnh đó, người viết cũng cảm thấy khi phóng to ra, thiết kế của XS Max có vẻ thô hơn so với iPhone X  Đây cũng là điều mà tôi từng cảm nhận với các thế hệ iPhone Plus trước: máy lớn hơn, nhưng thiếu sự thanh thoát so với phiên bản máy nhỏ
+Bên cạnh đó, người viết cũng cảm thấy khi phóng to ra, thiết kế của XS Max có vẻ thô hơn so với iPhone X  Đây cũng là điều mà tôi từng cảm nhận với các thế hệ iPhone Plus trước: máy lớn hơn, nhưng thiếu sự thanh thoát so với phiên bản máy nhỏ
+Apple đã làm rất tốt trong việc trao cho người dùng các công cụ để giữ tài khoản và thiết bị của họ an toàn, nhưng giống như bất kỳ thiết bị có kết nối nào khác, Apple ID thường xuyên là đối tượng tấn công của những kẻ xấu, lừa đảo
+  Một số người dùng (đang tăng lên) báo cáo rằng Apple ID của họ đã bị khoá và vì lý do an toàn, họ đang được đề nghị xác nhận lại nhận dạng
+  Một tài khoản Apple ID bị khoá là tin xấu bởi vì nó ngăn bạn truy cập các dịch vụ iCloud và Apple, bao gồm cả App Store, Apple Music, iCloud, iMessage
+
+
+ Một số người dùng trên Reddit và Twitter đang phàn nàn về vấn đề này và trong một số trường hợp, họ được yêu cầu mở khoá tài khoản bằng cách trả lời các câu hỏi bảo mật và nhập một số điện thoại tin cậy phục vụ cho xác thực hai lớp
+
